@@ -1,0 +1,17 @@
+# skip the startup message
+startup_message off 
+# Automatically detach on hangup.
+autodetach on
+# If a screen dies, don't freeze the whole screen waiting for it.
+nonblock on
+# UTF-8 is necessary.
+defutf8 on
+# Change default scrollback value for new windows: scrollback 10000
+defscrollback 10000
+# start with visual bell as default
+vbell off 
+vbell_msg "Bell on %t (%n)"
+
+hardstatus on
+hardstatus alwayslastline "%{=b}%{b}%-w%{.BW}%10>%n*%t%{-}%+w%< %=%{kG}%l | %H"
+#hardstatus string "%{.bW}%-w%{.rY}%n %t%{-}%+w %=%{..G} %H(%l) %{..Y} %Y/%m/%d %c:%s "
