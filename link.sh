@@ -1,7 +1,8 @@
 #!/bin/bash
 
-ln -sf `realpath .vimrc` ~/.vimrc
-ln -sf `realpath .bash_profile` ~/.bash_profile
-ln -sf `realpath .bashrc` ~/.bashrc
-ln -sf `realpath .multitailrc` ~/.multitailrc
-ln -sf `realpath .screenrc` ~/.screenrc
+DIR=`dirname $0`
+ln -sf $DIR/.vimrc ~/.vimrc
+ln -sf $DIR/.bash_profile ~/.bash_profile
+ln -sf $DIR/.bashrc ~/.bashrc
+ln -sf $DIR/.multitailrc ~/.multitailrc
+ln -sf $DIR/.screenrc ~/.screenrc
