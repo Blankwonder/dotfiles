@@ -79,6 +79,7 @@ alias ..4="cd ../../../.."
 alias ..5="cd ../../../../.."
 
 alias p="ps aux|grep"
+alias c='curl -w "\n"'
 
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
