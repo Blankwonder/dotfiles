@@ -14,3 +14,5 @@ set statusline=%<%f\ %h%m%r%=%{\"[\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\"
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+
+set mouse=a
