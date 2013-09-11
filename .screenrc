@@ -14,6 +14,5 @@ vbell_msg "Bell on %t (%n)"
 
 hardstatus on
 hardstatus alwayslastline "%{=b}%{b}%-w%{.BW}%10>%n*%t%{-}%+w%< %=%{kG}%l | %H"
-#hardstatus string "%{.bW}%-w%{.rY}%n %t%{-}%+w %=%{..G} %H(%l) %{..Y} %Y/%m/%d %c:%s "
 
-shelltitle '$ |bash'
+#shelltitle '% |bash'

@@ -28,7 +28,7 @@ fi
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
     xterm-color) color_prompt=yes;;
-    screen) PROMPT_COMMAND='echo -n -e "\033k\033\134"';;
+    screen) PROMPT_COMMAND='echo -n -e "\033k$USER\033\134"';;
 esac
 
 # uncomment for a colored prompt, if the terminal has the capability; turned
