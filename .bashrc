@@ -57,6 +57,9 @@ alias ..5="cd ../../../../.."
 alias p="ps aux|grep"
 alias c='curl -w "\n"'
 
+alias targz="tar cvfz"
+alias untargz="tar xvfz"
+
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
