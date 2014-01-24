@@ -1,0 +1,27 @@
+PATH=$HOME/bin:/usr/local/sbin:/usr/local/bin:$PATH
+PATH=$PATH:/usr/local/share/npm/bin # Add NPM
+PATH=$PATH:$HOME/.rvm/bin # Add RVM
+
+export LANG="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
+
+export LS_OPTIONS='--color=auto'
+export CLICOLOR='Yes'
+export LSCOLORS=''
+
+alias ll="ls -la"
+alias coconut='mosh coconut -- screen -ARD'
+alias chakela='mosh chakela -- screen -ARD'
+alias capslock="mosh -p 60011 capslock -- screen -ARD"
+alias yach=chakela
+
+alias hide="setfile -a V"
+alias show="setfile -a v"
+
+alias rpi='ssh -t rpi "screen -ARD"'
+alias hq='ssh -t hq "screen -ARD"'
+
+alias flushdns="sudo killall mDNSResponder"
+alias pythonserver="python -m SimpleHTTPServer"
+
+eval "$(rbenv init -)"
