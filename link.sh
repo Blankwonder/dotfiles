@@ -7,3 +7,4 @@ ln -sfn $DIR/.vimrc ~/.vimrc
 ln -sfn $DIR/.bashrc ~/.bashrc
 ln -sfn $DIR/.multitailrc ~/.multitailrc
 ln -sfn $DIR/.screenrc ~/.screenrc
+ln -sfn $DIR/.shell_aliases ~/.shell_aliases

@@ -33,32 +33,9 @@ else
     PS1='\[\033[G\]\[\e[1;32m\][\u@\h]\W \$\[\e[0m\] '
 fi
 
-# enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
+if [ -f ~/.shell_aliases ]; then
+    . ~/.shell_aliases
 fi
-
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-
-alias ..="cd .."
-alias ..2="cd ../.."
-alias ..3="cd ../../.."
-alias ..4="cd ../../../.."
-alias ..5="cd ../../../../.."
-
-alias p="ps aux|grep"
-alias c='curl -w "\n"'
-
-alias targz="tar cvfz"
-alias untargz="tar xvfz"
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
