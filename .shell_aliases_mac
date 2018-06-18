@@ -19,6 +19,8 @@ alias hide="setfile -a V"
 alias show="setfile -a v"
 
 alias rpi='ssh -t rpi "screen -ARD"'
+alias Debian-A='ssh -t root@192.168.1.4 "screen -ARD"'
+alias Debian-B='ssh -t root@192.168.1.5 "screen -ARD"'
 
 alias flushdns="sudo killall -HUP mDNSResponder;sudo discoveryutil mdnsflushcache;sudo discoveryutil udnsflushcaches"
 alias pythonserver="python -m SimpleHTTPServer"
@@ -27,10 +29,6 @@ eval "$(rbenv init -)"
 
 export GOPATH=$HOME/go
 
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-
-alias docker-shellinit="\$(boot2docker shellinit)"
 eval $(thefuck --alias)
 
 alias proxy="export https_proxy=http://127.0.0.1:6152;export http_proxy=http://127.0.0.1:6152"
