@@ -1,5 +1,4 @@
-PATH=$HOME/bin:/usr/local/sbin:/usr/local/bin:$PATH
-PATH=$PATH:$HOME/.rvm/bin # Add RVM
+PATH=~/.rbenv/shims:$HOME/bin:/usr/local/sbin:/usr/local/bin:~/Library/Python/2.7/bin:$PATH
 
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
@@ -10,25 +9,13 @@ export CLICOLOR='Yes'
 export LSCOLORS=''
 
 alias ll="ls -la"
-alias coconut='mosh coconut -- screen -ARD'
-alias rock='mosh rock -- screen -ARD'
-alias yach=rock
-alias maped-tw='mosh maped-tw -- screen -ARD'
 
 alias hide="setfile -a V"
 alias show="setfile -a v"
-
-alias rpi='ssh -t rpi "screen -ARD"'
-alias Debian-A='ssh -t root@192.168.1.4 "screen -ARD"'
-alias Debian-B='ssh -t root@192.168.1.5 "screen -ARD"'
 
 alias flushdns="sudo killall -HUP mDNSResponder;sudo discoveryutil mdnsflushcache;sudo discoveryutil udnsflushcaches"
 alias pythonserver="python -m SimpleHTTPServer"
 
 eval "$(rbenv init -)"
-
-export GOPATH=$HOME/go
-
-eval $(thefuck --alias)
 
 alias proxy="export https_proxy=http://127.0.0.1:6152;export http_proxy=http://127.0.0.1:6152"
